@@ -1,0 +1,36 @@
+/* 시안 B — 무채색 바탕에 딥네이비 한 색만. */
+:root {
+  --accent: #1b3a63;
+  --photo-frame-radius: 3px;
+  --photo-radius: 4px;
+  --chip-radius: 3px;
+  --title-case: uppercase;
+  --title-spacing: 0.14em;
+  --bullet-color: #1b3a63;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-force-light]) {
+    --accent: #8fb3dd;
+    --bullet-color: #8fb3dd;
+  }
+}
+.hero { border-bottom-color: var(--accent); }
+.hero__name {
+  border-left: 4px solid var(--accent);
+  padding-left: 0.7rem;
+  margin-left: -0.9rem;
+}
+.hero__title { padding-left: 0; }
+.section__title { color: var(--accent); }
+.section__title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 2rem;
+  background: var(--accent);
+  margin-top: 0.4rem;
+}
+.job__company { color: var(--accent); }
+.highlights b { color: var(--accent); }
+.chips li { background: transparent; border: 1px solid var(--rule); }
+.lede a, .rows__what a { color: var(--accent); border-bottom-color: currentColor; }

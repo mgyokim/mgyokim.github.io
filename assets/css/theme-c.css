@@ -1,0 +1,67 @@
+/* 시안 C — MUI풍 카드. 면과 그림자로 구획을 나눈다. */
+:root {
+  --bg:          #f4f5f7;
+  --fg:          #1c1f24;
+  --muted:       #5a6069;
+  --faint:       #8a919b;
+  --rule:        #e2e5ea;
+  --accent:      #1976d2;
+  --chip-bg:     #e8eaee;
+  --chip-fg:     #4a515a;
+  --chip-radius: 999px;
+  --card-bg:     #ffffff;
+  --card-border: 1px solid #e6e9ee;
+  --card-shadow: 0 1px 2px rgba(16,24,40,.05), 0 6px 18px -8px rgba(16,24,40,.14);
+  --card-radius: 12px;
+  --card-pad:    1.6rem 1.5rem;
+  --photo-frame-radius: 10px;
+  --photo-radius: 50%;
+  --title-case:  none;
+  --title-spacing: 0;
+  --title-size:  0.95rem;
+  --title-weight: 600;
+  --bullet-color: #1976d2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-force-light]) {
+    --bg:        #14171c;
+    --fg:        #e7eaee;
+    --muted:     #a2a9b3;
+    --faint:     #757c86;
+    --rule:      #2a2f37;
+    --accent:    #7db3f0;
+    --chip-bg:   #232830;
+    --chip-fg:   #aab1bb;
+    --card-bg:   #1a1e24;
+    --card-border: 1px solid #262b33;
+    --card-shadow: 0 1px 2px rgba(0,0,0,.4);
+    --bullet-color: #7db3f0;
+  }
+}
+.hero {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 1.6rem 1.5rem;
+}
+.section__title { color: var(--fg); }
+.section--summary .section__body,
+.section--skills  .section__body,
+.section--edu     .section__body,
+.section--writing .section__body {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 1.6rem 1.5rem;
+}
+.highlights { border: none; background: transparent; gap: 0.75rem; margin-top: 1.5rem; }
+.highlights li {
+  background: var(--chip-bg);
+  border-radius: 8px;
+}
+.highlights b { color: var(--accent); }
+.job + .job { margin-top: 1.1rem; }
+.project__name { border-bottom: none; padding-bottom: 0; }
+.foot { border-top: none; text-align: center; }

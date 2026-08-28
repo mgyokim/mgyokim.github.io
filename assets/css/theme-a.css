@@ -1,0 +1,21 @@
+/* 시안 A — 무채색 미니멀. 색은 흑·회·백뿐, 장식은 헤어라인 규칙선만. */
+:root {
+  --photo-frame-radius: 0;
+  --photo-radius: 0;
+  --chip-radius: 2px;
+  --title-case: uppercase;
+  --title-spacing: 0.16em;
+  --title-size: 0.7rem;
+}
+.hero__name { font-weight: 600; }
+.section__title { color: var(--fg); }
+.section__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--rule-strong);
+  margin-top: 0.45rem;
+  opacity: 0.85;
+}
+.highlights { border-radius: 0; }
+.chips li { background: transparent; border: 1px solid var(--rule); }

@@ -1,4 +1,368 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="ko" data-theme="a" data-layout="side">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김민교 · MINGYO KIM — 금융 IT 백엔드 개발자</title>
+<meta name="description" content="금융 도메인과 데이터 계층에 전문성을 쌓는 백엔드 개발자. 마이데이터, 증권사 IRP 로보어드바이저 연동, 대용량 배치와 데이터 정합성.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/theme-a.css" data-theme-sheet>
+</head>
+<body>
+
+<!-- ===== 미리보기 전용 컨트롤 (시안 확정 후 제거) ===== -->
+<div class="preview-bar" id="previewBar">
+  <span class="preview-bar__label">시안</span>
+  <button type="button" data-set-theme="a" class="is-on">A 무채색</button>
+  <button type="button" data-set-theme="b">B 1색</button>
+  <button type="button" data-set-theme="c">C 카드</button>
+  <span class="preview-bar__sep"></span>
+  <button type="button" data-set-layout="side" class="is-on">좌우</button>
+  <button type="button" data-set-layout="center">중앙</button>
+  <span class="preview-bar__sep"></span>
+  <button type="button" data-set-lang="ko" class="is-on">KO</button>
+  <button type="button" data-set-lang="en">EN</button>
+</div>
+
+<div class="page">
+
+<header class="hero">
+  <img class="hero__photo" src="assets/img/profile.jpg" alt="뉴욕 월스트리트 차징불 앞의 김민교" width="480" height="640">
+  <div class="hero__body">
+    <h1 class="hero__name"><i data-ko>김민교</i><i data-en>Mingyo Kim</i></h1>
+    <p class="hero__title">
+      <i data-ko>금융 IT 백엔드 개발자 <span class="hero__stack">Java · Spring</span></i>
+      <i data-en>Financial IT Backend Engineer <span class="hero__stack">Java · Spring</span></i>
+    </p>
+    <p class="hero__sub">
+      <i data-ko>마이데이터 자산관리와 증권사 IRP 연동을 개발·운영했습니다.</i>
+      <i data-en>I build and operate MyData wealth services and retirement pension (IRP) integrations for securities firms.</i>
+    </p>
+    <ul class="hero__links">
+      <li><a href="mailto:mgkim.developer@gmail.com">mgkim.developer@gmail.com</a></li>
+      <li><a href="https://github.com/mgyokim" rel="me">github.com/mgyokim</a></li>
+      <li><a href="https://mgyo.tistory.com" rel="me">mgyo.tistory.com</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="section section--summary">
+  <h2 class="section__title"><i data-ko>소개</i><i data-en>Summary</i></h2>
+  <div class="section__body">
+    <p class="lede">
+      <i data-ko>약 2년간 금융 IT 백엔드로 일하며, 회원 10만 명 이상의 자산관리 서비스와 증권 3사 퇴직연금 로보어드바이저 연동을 맡았습니다. 개인신용정보와 금융 규제를 다루는 환경에서 데이터의 정확성을 가장 우선하는 요건으로 두고 일했고, 정합성·조회 성능·저장소 선택처럼 데이터 계층에서 발생하는 문제를 직접 풀어 왔습니다. 앞으로도 금융과 데이터베이스에 전문성을 가진 개발자가 되고자 노력하고 있습니다.</i>
+      <i data-en>Over two years as a financial IT backend engineer, I have owned a MyData wealth service used by more than 100,000 members and its robo-advisory integrations with three securities firms for IRP, Korea&rsquo;s individual retirement pension account (comparable to a US IRA). Working under Korea's Credit Information Act and financial-security guidelines, I treated data correctness as the first requirement, and spent most of my time on data-layer problems: consistency, query performance, and storage choice. I am working to become a developer with real depth in both finance and databases.</i>
+    </p>
+    <ul class="highlights">
+      <li>
+        <b><i data-ko>27개 사업자 중 1곳</i><i data-en>1 of 27 providers</i></b>
+        <span><i data-ko>마이데이터 2.0 전환 참여 · 회원 10만 명 이상 적용</i><i data-en>MyData 2.0 migration · applied to 100k+ members</i></span>
+      </li>
+      <li>
+        <b><i data-ko>증권 3사 · 약 2만 계좌</i><i data-en>3 firms · ~20k accounts</i></b>
+        <span><i data-ko>삼성·한국투자·KB증권 IRP 일임·자문 연동</i><i data-en>IRP pension robo-advisory integration</i></span>
+      </li>
+      <li>
+        <b><i data-ko>일 100만 건 이상</i><i data-en>1M+ records daily</i></b>
+        <span><i data-ko>정산 배치를 작업 큐 기반으로 재설계</i><i data-en>Settlement batch redesigned on a job queue</i></span>
+      </li>
+      <li>
+        <b><i data-ko>일 100억 원 규모</i><i data-en>~₩10B daily volume</i></b>
+        <span><i data-ko>거래 시스템 레거시를 무중단으로 이전</i><i data-en>Legacy trade system migrated with zero downtime</i></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--now">
+  <h2 class="section__title"><i data-ko>현재</i><i data-en>Now</i></h2>
+  <div class="section__body">
+    <div class="now">
+      <div class="now__head">
+        <h3 class="now__name">
+          <img class="now__logo now__logo--ko" data-ko src="assets/img/woori-fg-ko.png" alt="우리금융그룹" width="560" height="96">
+          <img class="now__logo now__logo--en" data-en src="assets/img/woori-fg-en.png" alt="Woori Financial Group" width="975" height="96">
+          <i data-ko>우리WON 청년 IT 아카데미</i><i data-en>Woori WON Youth IT Academy</i>
+          <span class="now__badge"><i data-ko>1기 교육생</i><i data-en>1st cohort</i></span>
+        </h3>
+        <p class="now__meta">
+          <span>2026.08.25 – 2026.12.11</span>
+          <span><i data-ko>600시간</i><i data-en>600 hours</i></span>
+        </p>
+      </div>
+      <p class="now__lede">
+        <i data-ko>우리에프아이에스 아카데미(서울 상암IT타워)에서 <b>평일 09:00~18:00, 100% 오프라인</b>으로 진행되는 금융 IT 인재양성 과정에 참여하고 있습니다. 과정은 금융 IT 구조 이해에서 시작해 프론트엔드, 데이터베이스, 서버·API, 금융 보안, 클라우드를 거쳐 우리WON뱅킹 개발 프로젝트로 이어집니다.</i>
+        <i data-en>I am attending a financial IT training programme at the Woori FIS Academy in Seoul, held <b>fully on-site, 9am to 6pm on weekdays</b>. It runs from the structure of financial IT through frontend, databases, servers and APIs, financial security and cloud, ending in a Woori WON banking project.</i>
+      </p>
+    </div>
+
+    <h3 class="now__subtitle"><i data-ko>관심을 두고 있는 것</i><i data-en>What I'm focused on</i></h3>
+    <ul class="interests">
+      <li>
+        <b><i data-ko>금융 데이터의 정합성과 대용량 처리</i><i data-en>Consistency and scale in financial data</i></b>
+        <i data-ko>기관 간 데이터가 어긋났을 때 원인 구간을 규명하는 방법, 그리고 건수가 늘어도 정확성이 흔들리지 않는 처리 구조</i>
+        <i data-en>How to locate the origin of a mismatch between institutions, and how to keep processing correct as volume grows</i>
+      </li>
+      <li>
+        <b><i data-ko>레거시와 최신 기술이 함께 있는 환경의 안정 운영</i><i data-en>Operating where legacy and current technology coexist</i></b>
+        <i data-ko>오래 운영된 시스템을 존중하면서 필요한 만큼만 안전하게 바꾸려 합니다. 이 관점은 첫 직장에서 Classic ASP를 다루며 갖게 됐습니다</i>
+        <i data-en>Respecting long-running systems while changing only what needs changing — a view I formed meeting Classic ASP at my first job</i>
+      </li>
+      <li>
+        <b><i data-ko>규제와 표준을 지키는 대외 연동</i><i data-en>External integration under regulation and standards</i></b>
+        <i data-ko>신용정보법과 표준 API 규격 아래에서 여러 금융기관과 규격을 맞춰 나가는 일</i>
+        <i data-en>Aligning specifications with other financial institutions under the Credit Information Act and the standard API</i>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--exp">
+  <h2 class="section__title"><i data-ko>경력</i><i data-en>Experience</i></h2>
+  <div class="section__body">
+
+    <article class="job">
+      <header class="job__head">
+        <h3 class="job__company">
+          <img class="job__mark" src="assets/img/quarterback-mark.png" alt="" aria-hidden="true" width="146" height="128">
+          <i data-ko>쿼터백그룹 &amp; 쿼터백자산운용</i><i data-en>Quarterback Group &amp; Quarterback Investments</i>
+        </h3>
+        <p class="job__meta">
+          <span class="job__role"><i data-ko>제품팀 · 백엔드 개발 및 운영</i><i data-en>Product Team · Backend Engineering &amp; Operations</i></span>
+          <span class="job__period">2024.10 – 2026.04 <i data-ko>(1년 6개월)</i><i data-en>(1 yr 6 mo)</i></span>
+        </p>
+        <p class="job__note">
+          <i data-ko>국내 최초의 로보어드바이저 전문 자산운용사를 보유한 핀테크 그룹. 담당 서비스는 2025년 금융위원회 ‘K-핀테크 30’에 선정되었습니다.</i>
+          <i data-en>A fintech group that owns Korea's first robo-advisory asset management firm. The service I worked on was named to the FSC's “K-Fintech 30” in 2025.</i>
+        </p>
+        <ul class="chips">
+          <li>Java</li><li>Spring Boot</li><li>Spring Cloud Gateway</li><li>JPA</li><li>MyBatis</li>
+          <li>NestJS</li><li>Python</li><li>Oracle</li><li>MySQL</li><li>MSSQL</li><li>MongoDB</li>
+          <li>Redis</li><li>Docker</li><li>Jenkins</li>
+        </ul>
+      </header>
+
+      <div class="project">
+        <h4 class="project__name">
+          <i data-ko>마이데이터 자산관리 서비스</i><i data-en>MyData personal-finance service</i>
+          <span class="project__period">2024.10 – 2026.04</span>
+        </h4>
+        <p class="project__lede">
+          <i data-ko>회원 10만 명 이상의 마이데이터 자산관리 서비스 백엔드를 맡아, 여러 금융기관에 흩어진 데이터를 모아 자산 조회·포트폴리오·주문을 처리하는 로직을 구현하고 REST API로 화면단과 외부 시스템을 이었습니다. 신용정보법과 금융보안원 기술 가이드라인, 표준 API 규격을 준수해 개발·운영했습니다.</i>
+          <i data-en>Owned the backend of a MyData service with 100,000+ members: aggregating data scattered across financial institutions into asset views, portfolios and orders, and exposing it through REST APIs to the client and to external systems. Built and operated under the Credit Information Act, the Financial Security Institute's technical guidelines, and the standard API specification.</i>
+        </p>
+        <ul class="bullets">
+          <li>
+            <b><i data-ko>마이데이터 기관담당자</i><i data-en>Registered institutional contact</i></b>
+            <i data-ko>마이데이터 종합포털에 기관담당자로 등록해 타 금융기관과의 데이터 연동·검증·이슈 대응을 직접 책임졌습니다. 연동 값이 어긋난 항목은 저희와 상대 기관이 함께 쓰는 거래 식별자(txid)로 요청·응답 전문(電文)을 대조해 어느 구간에서 어긋났는지 규명했습니다.</i>
+            <i data-en>Registered on the MyData portal as our institutional contact, personally responsible for integration, verification and incident handling with other financial institutions. When values diverged, I reconciled request/response messages by the transaction id (txid) both sides share to isolate where the mismatch originated.</i>
+          </li>
+          <li>
+            <b><i data-ko>마이데이터 2.0 전환</i><i data-en>MyData 2.0 migration</i></b>
+            <i data-ko>2025.06.19 서비스 개시 27개 사업자 중 하나로 참여했습니다. 변경된 표준과 전환 요건을 항목별로 분석해 백엔드를 재구성하고, 이번 일정에 반드시 필요한 작업과 이후 작업을 구분해 개발·기획·운영 부서의 우선순위를 조율함으로써 회원 10만 명 이상에게 적용되는 전환을 일정 내에 안정적으로 오픈했습니다.</i>
+            <i data-en>One of the 27 providers that launched on 19 Jun 2025. I analysed the revised standard item by item, restructured the backend, and separated must-ship work from follow-up work to align the engineering, product and operations teams — shipping a migration affecting 100,000+ members on schedule.</i>
+          </li>
+          <li>
+            <b><i data-ko>대용량 정산 배치 재설계</i><i data-en>High-volume settlement batch</i></b>
+            <i data-ko>매일 새벽 정산 대상 100만 건이 같은 시간대에 몰리며 배치가 지연됐습니다. 순차 실행 구조를 작업 큐(Bull Queue)와 Redis 기반으로 다시 설계해 부하를 나누고 실패한 작업만 다시 처리하도록 바꿔 지연을 없앴고, SQL 인덱스와 쿼리를 함께 튜닝했습니다.</i>
+            <i data-en>A nightly settlement job processing over a million records piled up in one place and ran late. I redesigned the sequential flow onto a job queue (Bull Queue) backed by Redis so load was spread and only failed jobs were retried, and tuned the SQL indexes and queries alongside it.</i>
+          </li>
+          <li>
+            <b><i data-ko>기관별 타임아웃 · 서킷브레이커</i><i data-en>Per-institution timeouts &amp; circuit breaker</i></b>
+            <i data-ko>병렬 조회 구조에서 특정 기관의 응답 지연이 전체 조회를 실패시키던 문제를, 기관별 응답 특성을 설정으로 분리하고 반복 실패 기관을 서킷브레이커로 격리해 해결했습니다. 일부 기관이 실패해도 나머지 데이터는 정상 반환하도록 부분 성공을 처리했습니다.</i>
+            <i data-en>In a parallel-fetch design, one slow institution failed the whole query. I moved per-institution response characteristics into configuration and isolated repeatedly failing institutions behind a circuit breaker, returning partial success so the remaining data still reached the user.</i>
+          </li>
+          <li>
+            <b><i data-ko>캐싱과 캐시 스탬피드 대응</i><i data-en>Caching &amp; stampede prevention</i></b>
+            <i data-ko>여러 화면이 공용으로 쓰는 운용사 포트폴리오 데이터를 Redis에 캐싱(TTL 6시간)해 외부 API 호출과 응답 지연을 줄였고, 다수 키가 동시에 만료되며 요청이 몰리는 캐시 스탬피드를 막기 위해 만료 전 사전 갱신 배치를 운영했습니다.</i>
+            <i data-en>Cached portfolio data shared across several screens in Redis (6-hour TTL) to cut external API calls and latency, and ran a pre-refresh batch ahead of expiry so a mass of keys never expired at once and stampeded the origin.</i>
+          </li>
+          <li>
+            <b><i data-ko>배치 운영 일원화</i><i data-en>Unified batch operations</i></b>
+            <i data-ko>분산돼 있던 약 20개 배치잡의 제어·모니터링 지점 7~8곳을 Jenkins 단일 대시보드로 재구성하고 Teams 웹훅 알림을 도입해, 수동 확인에 의존하던 감지를 실시간으로 전환했습니다.</i>
+            <i data-en>Consolidated 7–8 scattered control and monitoring points for ~20 batch jobs into a single Jenkins dashboard and added Teams webhook alerts, replacing manual checks with real-time detection.</i>
+          </li>
+          <li>
+            <b><i data-ko>연금인출전략 기능 단독 기획</i><i data-en>Sole product owner, pension withdrawal strategy</i></b>
+            <i data-ko>기획 인력이 부족한 상황에서 CTO와 협의해 연금인출전략 기능의 기획을 단독으로 맡았습니다. 사업부 요구사항 협의부터 플로우차트 설계·프로토타입·인터랙티브 데모까지 직접 진행했습니다. 플로우차트부터 데모 생성까지 자동화 워크플로우를 구축해 사업부가 실제 동작을 즉시 확인할 수 있게 함으로써, 피드백 주기를 3일 이상에서 하루 이내로 단축했습니다. 퇴직연금 DB·DC와 개인사업자 여부 등 사용자 유형별 분기가 많아, 의사결정 분기 약 7개에서 데이터 흐름 12개 케이스를 도출해 스펙을 확정했습니다.</i>
+            <i data-en>With no product manager available, I took the feature on alone after agreeing it with the CTO — from requirements discussion with the business team through flowchart design, prototypes and an interactive demo. Automating the path from flowchart to generated demo let the business team see the actual behaviour immediately, cutting the feedback cycle from three days or more to under one. Because DB/DC pension types and self-employed status create many branches, I derived 12 data-flow cases from roughly 7 decision points to settle the spec.</i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h4 class="project__name">
+          <i data-ko>증권사 IRP 일임 · 자문 로보어드바이저 연동</i><i data-en>IRP pension robo-advisory integration with securities firms</i>
+          <span class="project__period">2025.04 – 2026.04</span>
+        </h4>
+        <p class="project__lede">
+          <i data-ko>삼성증권·한국투자증권·KB증권 세 곳과 IRP 일임·자문 로보어드바이저 서비스를 잇는 백엔드를 개발했습니다. 합산 약 2만 계좌를 운용·관리하며, 증권사 앱 안에서 인앱 방식으로 출시했습니다.</i>
+          <i data-en>Built the backend connecting our discretionary and advisory robo-advisory service for IRP retirement pension accounts to Samsung Securities, Korea Investment &amp; Securities and KB Securities — around 20,000 accounts in total, shipped in-app inside each firm's own application.</i>
+        </p>
+        <ul class="bullets">
+          <li>
+            <b><i data-ko>게이트웨이 계층의 인터페이스 설계</i><i data-en>Interface design at the gateway</i></b>
+            <i data-ko>증권사마다 인증과 전문 헤더 규격이 달라 같은 처리가 여러 서비스에 흩어져 있던 구조를, Spring Cloud Gateway 계층에서 헤더 변환과 공통 처리를 흡수하도록 설계했습니다. 연동 증권사가 늘어도 서비스 코드를 고치지 않고 게이트웨이 설정으로 대응합니다.</i>
+            <i data-en>Each firm had its own authentication and message-header format, so the same handling was duplicated across services. I moved header translation and shared concerns into the Spring Cloud Gateway layer, so adding a firm is a gateway configuration change rather than a service code change.</i>
+          </li>
+          <li>
+            <b><i data-ko>규격 분석과 검증 구간 분리</i><i data-en>Spec analysis &amp; validation boundaries</i></b>
+            <i data-ko>증권사마다 다른 계좌 개설·잔고 조회·주문·체결 규격을 하나씩 분석해 데이터 스펙을 정의하고, 서로 다른 응답을 서비스가 같은 구조로 다루도록 매핑했습니다. 항목별 검증 로직으로 구간을 나눠 한 증권사의 문제가 전체로 번지지 않게 했습니다.</i>
+            <i data-en>Analysed each firm's account-opening, balance, order and execution specs, defined a common data spec, and mapped divergent responses into one shape for the service. Field-level validation drew boundaries so one firm's problem could not propagate.</i>
+          </li>
+          <li>
+            <b><i data-ko>조회 성능 개선 (N+1 → MyBatis)</i><i data-en>Query performance (N+1 → MyBatis)</i></b>
+            <i data-ko>고객·포트폴리오·계좌·구성종목·기준가·평가금액을 함께 조회하는 구간에서 연관 엔티티 반복 조회(N+1)가 발생해, 복잡한 조회 구간을 MyBatis로 분리했습니다. 기본 CRUD는 JPA로, 복잡한 조회는 MyBatis로 도구를 목적에 맞게 나눈 선택이었고, 부하 테스트로 병목 지점을 특정한 뒤 개선했습니다.</i>
+            <i data-en>Fetching customer, portfolio, account, holdings, NAV and valuation together triggered N+1 queries on lazily loaded associations, so I moved that read path to MyBatis — keeping JPA for straightforward CRUD and using MyBatis where queries get complex — after load testing to pinpoint the bottleneck.</i>
+          </li>
+          <li>
+            <b><i data-ko>주문 정합성과 운영</i><i data-en>Order consistency &amp; operations</i></b>
+            <i data-ko>로보어드바이저 자산배분에 따라 매수·리밸런싱 주문이 정확히 전달되고 체결 결과가 반영되도록 흐름을 설계했으며, Oracle 데이터 정합성을 점검하고 연동 배치를 안정적으로 운영했습니다.</i>
+            <i data-en>Designed the flow so that buy and rebalancing orders derived from the robo-advisor's allocation were transmitted exactly and executions reflected back, verified data consistency in Oracle, and kept the integration batches running.</i>
+          </li>
+          <li>
+            <b><i data-ko>운영 환경</i><i data-en>Operating environment</i></b>
+            <i data-ko>Teleport 접근 통제 환경에서 Ubuntu 위에 Docker로 서비스를 올려 운영했고, 외부 API 스펙 변경으로 발생한 장애를 알림으로 조기에 감지해 핫픽스로 정상화하는 등 장애·운영 이슈에 상시 대응했습니다.</i>
+            <i data-en>Ran services in Docker on Ubuntu behind Teleport access control, and handled incidents on an ongoing basis — for example detecting a failure caused by an external API spec change through alerting and restoring service with a hotfix.</i>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <header class="job__head">
+        <h3 class="job__company">
+          <picture class="job__mark">
+            <source srcset="assets/img/sellmate-mark-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/img/sellmate-mark.png" alt="" aria-hidden="true" width="148" height="128">
+          </picture>
+          <i data-ko>셀메이트</i><i data-en>Sellmate</i>
+        </h3>
+        <p class="job__meta">
+          <span class="job__role"><i data-ko>개발팀 · 백엔드 개발 및 운영</i><i data-en>Development Team · Backend Engineering &amp; Operations</i></span>
+          <span class="job__period">2024.03 – 2024.10 <i data-ko>(7개월)</i><i data-en>(7 mo)</i></span>
+        </p>
+        <p class="job__note">
+          <i data-ko>약 66개 판매처 연동을 지원하는, 하루 평균 약 100억 원 규모 거래의 이커머스 주문·재고 관리 서비스입니다.</i>
+          <i data-en>An e-commerce order and inventory management service integrating with some 66 sales channels and handling roughly ₩10 billion in daily transaction volume.</i>
+        </p>
+        <ul class="chips">
+          <li>Classic ASP</li><li>PHP (Laravel)</li><li>MSSQL</li><li>Redis</li><li>Python</li><li>Docker</li><li>Sentry</li>
+        </ul>
+      </header>
+
+      <div class="project">
+        <ul class="bullets">
+          <li>
+            <b><i data-ko>택배사 연동 안정화</i><i data-en>Stabilising the courier integration</i></b>
+            <i data-ko>네트워크 타임아웃과 IIS 프로세스 병목으로 송장이 자사에는 입력되나 택배사 시스템에는 미등록되는 누락을 대응했습니다. 자사 로그·택배사 로그·네트워크단을 종합 분석해 택배사 API의 일괄 처리 한도가 300건임을 확인하고, 테스트로 안정적으로 도는 구간을 판단해 청크 단위를 약 30% 축소(300 → 200)하고 연동 결과 검증 로직을 보완함으로써 IIS의 대량 요청 부담을 완화했습니다.</i>
+            <i data-en>Waybills were recorded on our side but missing from the courier's system, caused by network timeouts and an IIS process bottleneck. Correlating our logs, the courier's logs and the network layer, I confirmed the courier API's batch limit was 300, tested to find the size that ran reliably, reduced the chunk by about 30% (300 → 200) and strengthened result verification — easing the bulk-request load on IIS.</i>
+          </li>
+          <li>
+            <b><i data-ko>레거시 무중단 이전</i><i data-en>Zero-downtime legacy migration</i></b>
+            <i data-ko>하루 거래액 약 100억 원에 영향을 주는 송장·택배사 연동 페이지를 담당해 Classic ASP를 PHP(Laravel)로 옮기는 마이그레이션의 최초 작업을 맡았고, 이후 이관의 기준과 템플릿이 되었습니다. 기능을 작은 단위로 나눠 무중단으로 점진 이전하고, 선임과 코드리뷰하며 공통 서비스 도입 등으로 리팩토링했습니다.</i>
+            <i data-en>Took the first slice of the Classic ASP → PHP (Laravel) migration — the waybill and courier integration pages, which touch roughly ₩10 billion of daily volume — and it became the template for the migrations that followed. I split features into small units and moved them incrementally with no downtime, refactoring through code review with a senior engineer.</i>
+          </li>
+          <li>
+            <b><i data-ko>테스트 자동화</i><i data-en>Test automation</i></b>
+            <i data-ko>테스트 트랜잭션을 지원하지 않는 ASP 환경에서 Python 픽스처 기반 테스트 패턴을 직접 설계해 팀에 전파했고, Docker 테스트 컨테이너(pytest·pyodbc로 MSSQL 연결)를 구축해 레거시 기능을 검증했습니다. 이 검증 틀로 배포 전 점검을 체계화해 손으로 반복하던 확인을 크게 줄였습니다.</i>
+            <i data-en>The ASP environment had no test transactions, so I designed a Python fixture-based test pattern and shared it with the team, and built a Docker test container (pytest with pyodbc against MSSQL) to verify legacy behaviour — turning repetitive manual pre-release checks into a systematic one.</i>
+          </li>
+          <li>
+            <b><i data-ko>다국어(i18n) 자동화</i><i data-en>i18n automation</i></b>
+            <i data-ko>한국어·일본어 번역 키를 스프레드시트와 프로젝트 사이에서 양방향으로 자동화해 다국어 운영 부담을 덜었습니다.</i>
+            <i data-en>Automated Korean/Japanese translation keys in both directions between a spreadsheet and the project, reducing the overhead of running a multilingual product.</i>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section section--skills">
+  <h2 class="section__title"><i data-ko>기술</i><i data-en>Skills</i></h2>
+  <div class="section__body">
+    <dl class="skills">
+      <dt><i data-ko>데이터베이스</i><i data-en>Database</i></dt>
+      <dd>Oracle · MySQL · MSSQL · MongoDB · Redis<span class="skills__note"><i data-ko>쿼리·인덱스 튜닝, JPA와 MyBatis 병행, 트랜잭션과 정합성, 캐싱 전략</i><i data-en>Query and index tuning, JPA alongside MyBatis, transactions and consistency, caching strategy</i></span></dd>
+
+      <dt><i data-ko>백엔드</i><i data-en>Backend</i></dt>
+      <dd>Java · Spring Boot · Spring Cloud Gateway · JPA · MyBatis · Node.js (NestJS) · Python (FastAPI) · PHP (Laravel)</dd>
+
+      <dt><i data-ko>인프라 · 운영</i><i data-en>Infrastructure &amp; Ops</i></dt>
+      <dd>Docker · Jenkins · Linux (Ubuntu) · Teleport · Bull Queue · Sentry · Git</dd>
+
+      <dt><i data-ko>도메인</i><i data-en>Domain</i></dt>
+      <dd><i data-ko>마이데이터(신용정보법·표준 API) · 퇴직연금 IRP · 로보어드바이저 · 이커머스 주문/재고</i><i data-en>MyData (Credit Information Act, standard API) · IRP retirement pension accounts · Robo-advisory · E-commerce order and inventory</i></dd>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--edu">
+  <h2 class="section__title"><i data-ko>학력 · 자격 · 수상</i><i data-en>Education, Certifications &amp; Awards</i></h2>
+  <div class="section__body">
+    <ul class="rows">
+      <li>
+        <span class="rows__when">2018.03 – 2025.02</span>
+        <span class="rows__what"><b><i data-ko>인천대학교 공과대학 산업경영공학과 · 공학사</i><i data-en>B.Eng. Industrial &amp; Management Engineering, Incheon National University</i></b>
+        <i data-ko>데이터마이닝 · 인공지능 · 웹프로그래밍 · 의사결정분석 등 전산·데이터 과목 이수</i><i data-en>Coursework in data mining, artificial intelligence, web programming and decision analysis</i></span>
+      </li>
+      <li>
+        <span class="rows__when">2026.08 – 2026.12</span>
+        <span class="rows__what"><b><i data-ko>우리WON 청년 IT 아카데미 1기 · 진행 중</i><i data-en>Woori WON Youth IT Academy, 1st cohort — in progress</i></b>
+        <i data-ko>우리금융그룹 · 600시간 · 금융 IT 구조, 프론트엔드, 데이터베이스, 서버·API, 금융 보안, 클라우드 및 프로젝트</i>
+        <i data-en>Woori Financial Group · 600 hours · financial IT structure, frontend, databases, servers and APIs, financial security, cloud and a final project</i></span>
+      </li>
+      <li>
+        <span class="rows__when">2024.06</span>
+        <span class="rows__what"><b><i data-ko>정보처리기사</i><i data-en>Engineer Information Processing</i></b></span>
+      </li>
+      <li>
+        <span class="rows__when">2022.07</span>
+        <span class="rows__what"><b><i data-ko>빅데이터분석기사</i><i data-en>Engineer Big Data Analysis</i></b>
+        <i data-ko>대용량 데이터의 수집·저장·처리 과정을 다룬 자격</i><i data-en>Covers large-scale data collection, storage and processing</i></span>
+      </li>
+      <li>
+        <span class="rows__when">2026.04</span>
+        <span class="rows__what"><b><i data-ko>OPIc 영어 IH</i><i data-en>OPIc English — Intermediate High</i></b></span>
+      </li>
+      <li>
+        <span class="rows__when">2021.07</span>
+        <span class="rows__what"><b><i data-ko>산학 캡스톤 디자인 경진대회 최우수상</i><i data-en>Grand Prize, Industry–Academia Capstone Design Competition</i></b>
+        <i data-ko>딥러닝(CNN)으로 반도체 웨이퍼 가공 불량 유형을 분류하는 모델 설계·구현</i><i data-en>Designed and implemented a CNN model classifying semiconductor wafer defect types</i></span>
+      </li>
+      <li>
+        <span class="rows__when">2021.02</span>
+        <span class="rows__what"><b><i data-ko>창업 우수 장학생 (한국산학협동재단)</i><i data-en>Entrepreneurship Scholarship, Korea Industry–Academia Foundation</i></b>
+        <i data-ko>창업동아리 대표로 도농상생 플랫폼을 기획·운영한 실적으로 선발, 등록금 전액</i><i data-en>Full tuition, awarded for founding and running an urban–rural platform as club president</i></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--writing">
+  <h2 class="section__title"><i data-ko>기록</i><i data-en>Writing</i></h2>
+  <div class="section__body">
+    <p class="lede">
+      <i data-ko>백엔드로 전환하기로 결정한 뒤, 배운 것을 정리하며 공부하는 습관을 지금까지 이어오고 있습니다. Java와 Spring, 데이터 접근 기술을 순수 JDBC부터 단계적으로 정리한 글들이 쌓여 <a href="https://mgyo.tistory.com">기술 블로그</a>의 누적 방문 27만 5천 명이 되었습니다.</i>
+      <i data-en>After deciding to move into backend engineering, I kept the habit of studying by writing down what I learned. Those notes — working up through data-access technologies from plain JDBC to JPA — have grown into a <a href="https://mgyo.tistory.com">technical blog</a> with 275,000 cumulative visits.</i>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p><a href="mailto:mgkim.developer@gmail.com">mgkim.developer@gmail.com</a> · <a href="https://github.com/mgyokim">GitHub</a> · <a href="https://mgyo.tistory.com">Blog</a></p>
+</footer>
+
+</div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
