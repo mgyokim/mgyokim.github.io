@@ -68,7 +68,7 @@
       </li>
       <li>
         <b><i data-ko>일 100만 건 이상</i><i data-en>1M+ records daily</i></b>
-        <span><i data-ko>정산 배치를 작업 큐 기반으로 재설계</i><i data-en>Settlement batch redesigned on a job queue</i></span>
+        <span><i data-ko>자산 수집·수익률 산출 배치를 작업 큐 기반으로 재설계</i><i data-en>Asset collection and return calculation redesigned on a job queue</i></span>
       </li>
       <li>
         <b><i data-ko>일 100억 원 규모</i><i data-en>~₩10B daily volume</i></b>
@@ -167,9 +167,9 @@
             <i data-en>One of the 27 providers that launched on 19 Jun 2025. I analysed the revised standard item by item, restructured the backend, and separated must-ship work from follow-up work to align the engineering, product and operations teams — shipping a migration affecting 100,000+ members on schedule.</i>
           </li>
           <li>
-            <b><i data-ko>대용량 정산 배치 재설계</i><i data-en>High-volume settlement batch</i></b>
-            <i data-ko>매일 새벽 정산 대상 100만 건이 같은 시간대에 몰리며 배치가 지연됐습니다. 순차 실행 구조를 작업 큐(Bull Queue)와 Redis 기반으로 다시 설계해 부하를 나누고 실패한 작업만 다시 처리하도록 바꿔 지연을 없앴고, SQL 인덱스와 쿼리를 함께 튜닝했습니다.</i>
-            <i data-en>A nightly settlement job processing over a million records piled up in one place and ran late. I redesigned the sequential flow onto a job queue (Bull Queue) backed by Redis so load was spread and only failed jobs were retried, and tuned the SQL indexes and queries alongside it.</i>
+            <b><i data-ko>대용량 자산 수집·수익률 산출 배치 재설계</i><i data-en>High-volume asset collection and return calculation batch</i></b>
+            <i data-ko>매일 마이데이터 자산 수집과 수익률·평가금액 산출 대상 100만 건이 같은 시간대에 몰리며 배치가 지연됐습니다. 순차 실행 구조를 작업 큐(Bull Queue)와 Redis 기반으로 다시 설계해 부하를 나누고 실패한 작업만 다시 처리하도록 바꿔 지연을 없앴고, SQL 인덱스와 쿼리를 함께 튜닝했습니다.</i>
+            <i data-en>A daily job that collected MyData asset records and recalculated valuations and returns — over a million records — piled up in one place and ran late. I redesigned the sequential flow onto a job queue (Bull Queue) backed by Redis so load was spread and only failed jobs were retried, and tuned the SQL indexes and queries alongside it.</i>
           </li>
           <li>
             <b><i data-ko>기관별 타임아웃 · 서킷브레이커</i><i data-en>Per-institution timeouts &amp; circuit breaker</i></b>
@@ -308,15 +308,19 @@
   <div class="section__body">
     <ul class="rows">
       <li>
-        <span class="rows__when">2018.03 – 2025.02</span>
-        <span class="rows__what"><b><i data-ko>인천대학교 공과대학 산업경영공학과 · 공학사</i><i data-en>B.Eng. Industrial &amp; Management Engineering, Incheon National University</i></b>
-        <i data-ko>데이터마이닝 · 인공지능 · 웹프로그래밍 · 의사결정분석 등 전산·데이터 과목 이수</i><i data-en>Coursework in data mining, artificial intelligence, web programming and decision analysis</i></span>
-      </li>
-      <li>
         <span class="rows__when">2026.08 – 2026.12</span>
         <span class="rows__what"><b><i data-ko>우리WON 청년 IT 아카데미 1기 · 진행 중</i><i data-en>Woori WON Youth IT Academy, 1st cohort — in progress</i></b>
         <i data-ko>우리금융그룹 · 600시간 · 금융 IT 구조, 프론트엔드, 데이터베이스, 서버·API, 금융 보안, 클라우드 및 프로젝트</i>
         <i data-en>Woori Financial Group · 600 hours · financial IT structure, frontend, databases, servers and APIs, financial security, cloud and a final project</i></span>
+      </li>
+      <li>
+        <span class="rows__when">2026.04</span>
+        <span class="rows__what"><b><i data-ko>OPIc 영어 IH</i><i data-en>OPIc English — Intermediate High</i></b></span>
+      </li>
+      <li>
+        <span class="rows__when">2018.03 – 2025.02</span>
+        <span class="rows__what"><b><i data-ko>인천대학교 공과대학 산업경영공학과 · 공학사</i><i data-en>B.Eng. Industrial &amp; Management Engineering, Incheon National University</i></b>
+        <i data-ko>데이터마이닝 · 인공지능 · 웹프로그래밍 · 의사결정분석 등 전산·데이터 과목 이수</i><i data-en>Coursework in data mining, artificial intelligence, web programming and decision analysis</i></span>
       </li>
       <li>
         <span class="rows__when">2024.06</span>
@@ -326,10 +330,6 @@
         <span class="rows__when">2022.07</span>
         <span class="rows__what"><b><i data-ko>빅데이터분석기사</i><i data-en>Engineer Big Data Analysis</i></b>
         <i data-ko>대용량 데이터의 수집·저장·처리 과정을 다룬 자격</i><i data-en>Covers large-scale data collection, storage and processing</i></span>
-      </li>
-      <li>
-        <span class="rows__when">2026.04</span>
-        <span class="rows__what"><b><i data-ko>OPIc 영어 IH</i><i data-en>OPIc English — Intermediate High</i></b></span>
       </li>
       <li>
         <span class="rows__when">2021.07</span>
@@ -349,8 +349,8 @@
   <h2 class="section__title"><i data-ko>기록</i><i data-en>Writing</i></h2>
   <div class="section__body">
     <p class="lede">
-      <i data-ko>백엔드로 전환하기로 결정한 뒤, 배운 것을 정리하며 공부하는 습관을 지금까지 이어오고 있습니다. Java와 Spring, 데이터 접근 기술을 순수 JDBC부터 단계적으로 정리한 글들이 쌓여 <a href="https://mgyo.tistory.com">기술 블로그</a>의 누적 방문 27만 5천 명이 되었습니다.</i>
-      <i data-en>After deciding to move into backend engineering, I kept the habit of studying by writing down what I learned. Those notes — working up through data-access technologies from plain JDBC to JPA — have grown into a <a href="https://mgyo.tistory.com">technical blog</a> with 275,000 cumulative visits.</i>
+      <i data-ko>배운 것을 정리하며 공부하는 습관을 지금까지 이어오고 있습니다. Java와 Spring, 데이터 접근 기술을 순수 JDBC부터 단계적으로 정리한 글들이 쌓여 <a href="https://mgyo.tistory.com">기술 블로그</a>의 누적 방문 27만 5천 명이 되었습니다.</i>
+      <i data-en>I have kept the habit of studying by writing down what I learned. Those notes — working up through data-access technologies from plain JDBC to JPA — have grown into a <a href="https://mgyo.tistory.com">technical blog</a> with 275,000 cumulative visits.</i>
     </p>
   </div>
 </section>
