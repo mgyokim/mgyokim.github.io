@@ -188,63 +188,10 @@ html[lang="en"] [data-ko] { display: none !important; }
 }
 
 /* ---------- 현재 (Now) ---------- */
-.now {
-  padding-left: 0.95rem;
-  border-left: 2px solid var(--accent);
-}
-
-.now__name {
-  font-size: 1.02rem;
-  color: var(--accent);
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem;
-}
-
-.now__logo {
-  width: auto;
-  align-self: center;
-  flex: 0 0 auto;
-}
-.now__logo--ko { height: 1.15em; }
-.now__logo--en { height: 0.95em; }
-
-/* 로고가 과정명 왼쪽에 오므로 제목 줄만 살짝 띄운다 */
-.now__name { gap: 0.55rem; }
-
-.now__badge {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--chip-fg);
-  background: var(--chip-bg);
-  border-radius: var(--chip-radius, 3px);
-  padding: 0.14rem 0.45rem;
-}
-
-.now__meta {
-  display: flex; flex-wrap: wrap;
-  font-size: 0.82rem;
-  color: var(--faint);
-  margin-top: 0.3rem;
-}
-.now__meta span + span::before {
-  content: "·";
-  margin: 0 0.45rem;
-  color: var(--rule);
-}
-
-.now__lede {
-  font-size: 0.9rem;
-  color: var(--muted);
-  max-width: var(--measure);
-  margin-top: 0.7rem;
-}
-.now__lede b { color: var(--fg); font-weight: 600; }
-
 .now__subtitle {
   font-size: 0.83rem;
   font-weight: 600;
   color: var(--faint);
-  margin-top: 2.1rem;
   margin-bottom: 0.85rem;
 }
 
@@ -440,8 +387,7 @@ html[lang="en"] [data-ko] { display: none !important; }
   .page { max-width: none; padding: 0; }
   .preview-bar { display: none !important; }
   .hero__photo { width: 108px; }
-  .now__subtitle, .interests { display: none; }
-  .now { border-left-width: 1px; }
+  .section--now { display: none; }
   .hero { padding-bottom: 0.9rem; margin-bottom: 1.25rem; }
   .hero__name { font-size: 18pt; }
   .job, .project, .rows li, .highlights { break-inside: avoid; page-break-inside: avoid; }
